@@ -1,0 +1,71 @@
+---
+title: "Neuromorphic Computing"
+author: "Nate Gonzales-Hess"
+format: revealjs
+---
+
+## Overview
+- Brief history of digital computers
+- Biologically-inspired computation
+- What is the goal?
+
+## Do Brains Compute?
+- What is a computation?
+- Are brains computers?
+
+## Turing Machines
+- Inspired by humans
+- A read/write head can approximate any function.
+- Theoretical
+
+## Von Neumann Architecture
+- The computer as we know it:
+```{mermaid}
+flowchart LR
+    Input --> CPU
+    CPU -->|Fetch/Store| Memory
+    Memory -->|Fetch/Store| CPU
+    CPU --> Output
+```
+
+```{mermaid}
+flowchart LR
+    subgraph CPU [Central Processing Unit]
+        ALU[Arithmetic Logic Unit]
+        CU[Control Unit]
+        Registers
+        CU --> ALU
+        CU --> Registers
+        ALU --> Registers
+        Registers --> ALU
+    end
+
+    Memory -->|Data & Instructions| CU
+    CU -->|Control Signals| Memory
+    CU -->|Control Signals| IO[Input/Output Devices]
+    IO -->|Data| Memory
+    Memory -->|Stored Data| IO
+
+    Registers -->|Data| CU
+    CU -->|Instructions| Registers
+```
+
+- Input data flows into memory 
+- Data is sent to the CPU in small portions. 
+- Computation happens.
+- Computated data is stored in memory.
+- https://youtu.be/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz
+
+## Artificial Intelligence
+- The MIT meeting
+- ANNs were models of biological systems
+- The AI winter
+
+## Artificial Intelligence
+- The ANN comeback
+- At some point, biological inspiration failed to add value.
+
+## AI Hardware
+- DNNs are matrix multiplications.
+- GPUs are good at matrix multiplication.
+- GPUs are in demand. 
