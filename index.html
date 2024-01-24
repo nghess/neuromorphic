@@ -373,8 +373,8 @@ Nate Gonzales-Hess
 <div>
 <pre class="mermaid mermaid-js">flowchart LR
     Input --&gt; CPU
-    CPU &lt;--&gt;|Fetch/Store| Memory
-    Memory &lt;--&gt; CPU
+    CPU --&gt;|Fetch/Store| Memory
+    Memory --&gt;|Fetch/Store| CPU
     CPU --&gt; Output
 </pre>
 </div>
@@ -382,14 +382,15 @@ Nate Gonzales-Hess
 </div>
 </div>
 <ul>
-<li>Input data flows into CPU</li>
-<li>Data is shuttled back and forth from CPU to memory as computation happens</li>
-<li>Output data is stored in memory.</li>
+<li>Input data flows into memory</li>
+<li>Data is sent to the CPU in small portions.</li>
+<li>Computation happens.</li>
+<li>Computated data is stored in memory.</li>
 </ul>
 </section>
-<section class="slide level2">
-
-<iframe data-external="1" src="https://www.youtube.com/embed/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz" width="100%" height="100%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<section id="von-neumann-contd." class="slide level2">
+<h2>Von Neumann Contd.</h2>
+<p>{{<a href="https://youtu.be/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz" class="uri">https://youtu.be/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz</a>}}</p>
 </section>
 <section id="artificial-intelligence" class="slide level2">
 <h2>Artificial Intelligence</h2>
@@ -412,13 +413,6 @@ Nate Gonzales-Hess
 <li>DNNs are matrix multiplications.</li>
 <li>GPUs are good at matrix multiplication.</li>
 <li>GPUs are in demand.</li>
-</ul>
-</section>
-<section id="neuromorphic-computing" class="slide level2">
-<h2>Neuromorphic Computing</h2>
-<ul>
-<li>Spiking Neural Networks</li>
-<li>Neuromorphic Hardware</li>
 </ul>
 <div class="footer footer-default">
 

@@ -23,38 +23,18 @@ format: revealjs
 ```{mermaid}
 flowchart LR
     Input --> CPU
-    CPU -->|Fetch/Store| Memory
-    Memory -->|Fetch/Store| CPU
+    CPU <-->|Fetch/Store| Memory
+    Memory <--> CPU
     CPU --> Output
 ```
 
-```{mermaid}
-flowchart LR
-    subgraph CPU [Central Processing Unit]
-        ALU[Arithmetic Logic Unit]
-        CU[Control Unit]
-        Registers
-        CU --> ALU
-        CU --> Registers
-        ALU --> Registers
-        Registers --> ALU
-    end
+- Input data flows into CPU 
+- Data is shuttled back and forth from CPU to memory as computation happens 
+- Output data is stored or sent to I/O devices.
 
-    Memory -->|Data & Instructions| CU
-    CU -->|Control Signals| Memory
-    CU -->|Control Signals| IO[Input/Output Devices]
-    IO -->|Data| Memory
-    Memory -->|Stored Data| IO
+---
 
-    Registers -->|Data| CU
-    CU -->|Instructions| Registers
-```
-
-- Input data flows into memory 
-- Data is sent to the CPU in small portions. 
-- Computation happens.
-- Computated data is stored in memory.
-- https://youtu.be/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz
+{{< video https://youtu.be/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz width="100%" height="100%" >}}
 
 ## Artificial Intelligence
 - The MIT meeting
@@ -69,3 +49,7 @@ flowchart LR
 - DNNs are matrix multiplications.
 - GPUs are good at matrix multiplication.
 - GPUs are in demand. 
+
+## Neuromorphic Computing
+- Spiking Neural Networks
+- Neuromorphic Hardware
