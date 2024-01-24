@@ -53,3 +53,11 @@ flowchart LR
 ## Neuromorphic Computing
 - Spiking Neural Networks
 - Neuromorphic Hardware
+
+## TrueNorth
+
+## Event-Based Vision
+
+{{< video https://youtu.be/MjX3z-6n3iA?si=CML6BvUsZd-y7jlm width="100%" height="100%" >}}
+
+## Where will it lead?
