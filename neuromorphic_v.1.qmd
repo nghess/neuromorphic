@@ -8,7 +8,8 @@ format: revealjs
 - Brief history of digital computers
 - Biologically-inspired computation
 - Neuromorphic computing
-- What is the goal?
+
+![](northpole_pcie.webp)
 
 ## Do Brains Compute?
 - What is a computation?
