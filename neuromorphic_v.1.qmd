@@ -1,12 +1,13 @@
 ---
-title: "Neuromorphic Computing"
-author: "Nate Gonzales-Hess"
+title: "Neural inference at the frontier of energy, space, and time"
+author: "Mohda et al. 2023"
 format: revealjs
 ---
 
 ## Overview
 - Brief history of digital computers
 - Biologically-inspired computation
+- Neuromorphic computing
 - What is the goal?
 
 ## Do Brains Compute?
@@ -15,8 +16,14 @@ format: revealjs
 
 ## Turing Machines
 - Inspired by humans
+
+![](human_computers.jpg)
+
+## Turing Machines
 - A read/write head can approximate any function.
 - Theoretical
+
+![](Turing_Machine_Model_Davey_2012.jpg)
 
 ## Von Neumann Architecture
 - The computer as we know it:
@@ -36,28 +43,85 @@ flowchart LR
 
 {{< video https://youtu.be/Oh31I1F2vds?si=RQAPqnR8TaWjxuPz width="100%" height="100%" >}}
 
-## Artificial Intelligence
-- The MIT meeting
-- ANNs were models of biological systems
-- The AI winter
+## Von Neumann Architecture
+![](computer_system_bus.png)
+
+:::{.notes}
+While computers were always intended to be something like a brain, they were maybe based on a particular type (very idealized) of mind.
+:::
 
 ## Artificial Intelligence
-- The ANN comeback
+- By the 1960s, prominent researchers felt AI was around the corner.
+- ANNs were models of biological systems
+
+## Artificial Intelligence
+
+![](perceptron_schematic_big.png)
+
+:::{.notes}
+The perceptron was invented in 1943 by Warren McCulloch, a psychologist.
+:::
+
+## Artificial Intelligence
+- AI Winter 1970s-1990s
+- AI Summer 2000s-current
 - At some point, biological inspiration failed to add value.
+![](perceptron_simple.png)
 
 ## AI Hardware
-- DNNs are matrix multiplications.
+- DNNs lean heavily on matrix multiplications.
+
+![](ann.png){width=657px height=382px}
+
+## GPUs
 - GPUs are good at matrix multiplication.
-- GPUs are in demand. 
+- GPUs are in high demand.
+
+![](wyoming_bitcoin_mine.png)
+:::{.notes}
+Microsoft reported one site in Wyoming because of its proximity to a pentagon data center and nuclear missile base. Records show other cryptocurrency facilities have ties to the Chinese state.
+:::
+
+## GPUs
+- GPUs are good at matrix multiplication.
+- GPUs are in high demand.
+
+![](h100.png)
+
+:::{.notes}
+By the end of 2024, Zuckerberg said that infrastructure will include 350,000 H100 graphics cards from Nvidia. As of today, H100s cost about 30k. 30k*350k = 10.5 billion dollars.
+:::
 
 ## Neuromorphic Computing
-- Spiking Neural Networks
 - Neuromorphic Hardware
+- Spiking Neural Networks
 
-## TrueNorth
+![](spike_excite_snnTorch.gif)
+
+## NorthPole
+- IBM's new "neural inference" chip
+- Outperforms GPUs per joule
+
+![](northpole_frames_per_joule.png)
+
+## NorthPole
+
+![](gpu_cpu_northpole.png)
+
+## NorthPole running RESNET
+![](northpole_resnet.png)
+
+:::{.notes}
+The increased energy consumption shown in red matches the shape of the bird,
+demonstrating the in situ, activity-dependent neural computation of NorthPole that requires minimal
+communication between neighboring cores
+:::
 
 ## Event-Based Vision
 
 {{< video https://youtu.be/MjX3z-6n3iA?si=CML6BvUsZd-y7jlm width="100%" height="100%" >}}
 
 ## Where will it lead?
+- Cognitive computers?
+- Do neuromorphic innovations mean anything for biology?
+- Will computing technology move closer or farther from its biological roots?
